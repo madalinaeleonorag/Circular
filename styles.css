@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+.outer-btn {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  align-self: center;
+  background: transparent;
+}
+
+.full-btn {
+  font-weight: 700;
+  border: 1px solid black;
+  background-color: black;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  color: white;
+  align-self: center;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+.navbar {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.navbar .navbar-links {
+  /*  */
+}
+
+.navbar .navbar-links .navbar-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 5px;
+  color: white;
+  opacity: 0.5;
+}
+
+.navbar .navbar-links .navbar-link:hover {
+  opacity: 1;
+}
+
+.navbar .web-name {
+  color: white;
+}
+
+.banner {
+    background-image: url('background.jpg');
+  /* background-image: linear-gradient(130deg, blue, orange); */
+  color: white;
+  padding: 25vh 10vw;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.banner .title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.banner .subtitle {
+  font-size: 1.5rem;
+  padding: 2vh 0;
+}
+
+.banner .actions {
+  display: flex;
+}
+
+.banner .actions .outer-btn {
+  margin-right: 5px;
+}
+
+.services {
+    color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+.services .services-title {
+    font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.services .service-cards-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    margin: 1vh 10vw;
+}
+
+.services .service-cards-wrapper .service-card {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    flex: 1 1 30%;
+    padding: 1vw;
+}
+
+.services .service-cards-wrapper .service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.services .service-cards-wrapper .service-card .service-card-title {
+    font-weight: bold;
+}
+
+.services .service-cards-wrapper .service-card .service-card-description {
+    opacity: 0.5;
+    text-align: center;
+}
