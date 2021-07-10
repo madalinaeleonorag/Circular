@@ -331,3 +331,54 @@ body {
     padding: 1vh 5vw;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .banner {
+    padding: 5vh 5vw;
+    text-align: center;
+  }
+
+  .banner .subtitle {
+    padding: 5vh 0;
+  }
+
+  .services .service-cards-wrapper .service-card .service-card-description {
+    font-size: 0.7rem;
+  }
+
+  .owner {
+    height: 30vh;
+  }
+
+  .owner .owner-description {
+    display: none;
+  }
+
+  .portfolio-project .portfolio-project-description .portfolio-project-description-resume {
+    padding: 3vh 0
+  }
+
+  .work .work-wrapper {
+    flex-flow: column;
+  }
+
+  .work .work-wrapper .work-available {
+    padding: 10px;
+  }
+
+  .work .work-wrapper .work-positions-available {
+    padding: 10px;
+  }
+
+  .work .work-wrapper .work-available .work-available-description {
+    font-size: 0.8rem;
+  }
+
+  .work .work-wrapper .work-positions-available .work-positions-available-description {
+    font-size: 0.8rem;
+  }
+}
