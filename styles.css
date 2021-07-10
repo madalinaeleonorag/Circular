@@ -10,10 +10,16 @@ body {
   text-transform: uppercase;
   line-height: 1.5rem;
   cursor: pointer;
+  width: fit-content;
   color: white;
   font-weight: 700;
   align-self: center;
   background: transparent;
+}
+
+.black-outer-btn {
+  border: 1px solid #0b3c5a;
+  color: #0b3c5a;
 }
 
 .full-btn {
@@ -25,6 +31,7 @@ body {
   color: white;
   align-self: center;
   cursor: pointer;
+  width: fit-content;
   border-radius: 20px;
   padding: 8px 12px;
 }
@@ -35,7 +42,7 @@ body {
   flex-flow: row;
   width: -webkit-fill-available;
   justify-content: space-between;
-  padding: 10px 15px;
+  padding: 2vh 2vw;
   align-items: center;
 }
 
@@ -46,7 +53,7 @@ body {
 .navbar .navbar-links .navbar-link {
   text-transform: uppercase;
   text-decoration: none;
-  padding-right: 5px;
+  padding-right: 2vw;
   color: white;
   opacity: 0.5;
 }
@@ -60,8 +67,7 @@ body {
 }
 
 .banner {
-    background-image: url('background.jpg');
-  /* background-image: linear-gradient(130deg, blue, orange); */
+  background-image: url("assets/picture1.jpg");
   color: white;
   padding: 25vh 10vw;
   background-size: cover;
@@ -72,7 +78,7 @@ body {
 
 .banner .title {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .banner .subtitle {
@@ -85,46 +91,243 @@ body {
 }
 
 .banner .actions .outer-btn {
-  margin-right: 5px;
+  margin-right: 2vw;
 }
 
 .services {
-    color: black;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 5vh 0;
+  color: black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 5vh 5vw;
 }
 
 .services .services-title {
-    font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .services .service-cards-wrapper {
-    display: flex;
-    flex-flow: wrap;
-    margin: 1vh 10vw;
+  display: flex;
+  flex-flow: wrap;
+  margin: 1vh 10vw;
 }
 
 .services .service-cards-wrapper .service-card {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    flex: 1 1 30%;
-    padding: 1vw;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  flex: 1 1 30%;
+  padding: 1vw;
 }
 
 .services .service-cards-wrapper .service-card img {
-    width: 100%;
-    height: auto;
+  width: auto;
+  height: 20vh;
 }
 
 .services .service-cards-wrapper .service-card .service-card-title {
-    font-weight: bold;
+  font-weight: bold;
+  padding: 1vh 0;
 }
 
 .services .service-cards-wrapper .service-card .service-card-description {
-    opacity: 0.5;
-    text-align: center;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.owner {
+  background: url("assets/picture2.jpg");
+  color: white;
+  height: 70vh;
+  padding: 5vw;
+  display: flex;
+  background-position: unset;
+  flex-flow: column;
+  background-size: cover;
+  place-content: center;
+}
+
+.owner .owner-name {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.owner .owner-function {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.owner .owner-description {
+  opacity: 0.5;
+  background: black;
+  font-size: 1.2rem;
+  padding: 3px;
+}
+
+.portfolio {
+  padding: 5vh 0;
+  display: flex;
+  flex-flow: column;
+  place-items: center;
+  align-content: center;
+}
+
+.portfolio .portfolio-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.portfolio .portfolio-categories {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.portfolio .portfolio-categories .portfolio-category {
+  text-transform: uppercase;
+  padding: 3vh 3vw;
+  opacity: 0.5;
+}
+
+.portfolio-project {
+  display: flex;
+}
+
+.portfolio-project img {
+  flex: 0 1 40%;
+  height: auto;
+  width: 100%;
+}
+
+.portfolio-project .portfolio-project-description {
+  flex: 0 1 30%;
+  place-self: center;
+  padding: 4vh 7vw 4vh 0;
+}
+
+.portfolio-project
+  .portfolio-project-description
+  .portfolio-project-description-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.portfolio-project
+  .portfolio-project-description
+  .portfolio-project-description-resume {
+  opacity: 0.5;
+  padding: 5vh 0;
+}
+
+.work {
+  color: white;
+  padding-top: 5vh;
+  display: flex;
+  flex-flow: column;
+  place-items: center;
+  align-content: center;
+  background-image: linear-gradient(122deg, #0b3c5a 21%, #ffa58e, #fce680);
+}
+
+.work .work-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.work .work-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 2vh 10vw;
+  flex-flow: row;
+}
+
+.work .work-wrapper .work-available {
+  display: flex;
+  flex: 1 1 40%;
+  flex-flow: column;
+  padding: 20px;
+}
+
+.work .work-wrapper .work-available .work-available-title {
+  font-weight: bold;
+}
+
+.work .work-wrapper .work-available .work-available-description {
+  opacity: 0.5;
+  padding: 2vh 0;
+}
+
+.work .work-wrapper .work-available .outer-btn {
+  margin-right: auto;
+}
+
+.work .work-wrapper .work-available .work-available-location {
+  padding: 2vh 0;
+}
+
+.work .work-wrapper .work-positions-available {
+  display: flex;
+  flex: 1 1 40%;
+  padding: 20px;
+  flex-flow: column;
+}
+
+.work .work-wrapper .work-positions-available .work-positions-available-title {
+  font-weight: bold;
+}
+
+.work
+  .work-wrapper
+  .work-positions-available
+  .work-positions-available-title
+  span {
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.work
+  .work-wrapper
+  .work-positions-available
+  .work-positions-available-description {
+  opacity: 0.5;
+  padding: 0vh 0 2vh 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .portfolio-project {
+    flex-flow: column;
+  }
+
+  .portfolio-project .portfolio-project-description {
+    padding: 4vh 7vw;
+  }
+
+  .services .service-cards-wrapper .service-card img {
+    height: 10vh;
+  }
+
+  .services .service-cards-wrapper {
+    margin: 1vh 5vw;
+  }
+
+  .banner {
+    padding: 10vh 5vw;
+  }
+
+  .owner {
+    height: 40vh;
+  }
+
+  .portfolio {
+    padding: 5vh 0 0 0;
+  }
+
+  .work-available-location iframe {
+    height: 100px;
+  }
+
+  .work .work-wrapper {
+    padding: 1vh 5vw;
+  }
 }
